@@ -53,3 +53,76 @@ def primes(n):
             sieve[i*i::2*i]=[False]*((n-i*i-1)/(2*i)+1)
     return [2] + [i for i in xrange(3,n,2) if sieve[i]]
   
+def factorial(n):
+  """Returns the facorial of a number"""
+  if n ==1:
+    return 1
+  return n*factorial(n-1)
+
+def combination(n,r):
+  return (factorial(n) / (factorial(n-r) * factorial(r)) )
+'''
+def readHand(aHand):
+  if isRoyalFlush(aHand):
+    return 10
+  if isStraightFlush(aHand):
+    return 9+ (isStraightFlush(aHand)/10)
+  if isFourKind(aHand):
+    return 8+ (isFourKind(aHand)/10)
+  if isFullHouse(aHand):
+    return 7+ (isFullHouse(aHand)/10)
+  if isFlush(aHand):
+    return 6+ (isFlush(aHand)/10)
+  if isStraight(aHand):
+    return 5+ (isStraight(aHand)/10)
+  if isThreeKind(aHand):
+    return 4+ (isThreeKind(aHand)/10)
+  if isTwoPair(aHand):
+    return 3+ (isTwpPair(aHand)/10)
+  if isPair(aHand):
+    return 2+ (isPair(aHand)/10)
+  else:
+    return 1+ (highCard/10)
+  
+def isRoyalFlush(aHand):
+  
+def sortHand(aHand):
+  for i in 
+  '''
+
+def isPalindrome(n):
+  nList = list(str(n))
+  for i in range(0,int(len(nList)/2)):
+    if nList[i] != nList[-1*(i+1)]:
+      return False
+  return True
+
+def isNotLychrel(n):
+  i=0
+  while i<50:
+    i+=1
+    if isPalindrome(n + invert(n)):
+      return True
+    else:
+      n+=invert(n)
+  return False
+
+def invert(i):
+  return int(str(i)[::-1])
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
