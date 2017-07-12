@@ -6,8 +6,8 @@ def convert(number):
     denominations = [1000,500,100,50,10,5,1]
     result_list = []
     divident = number
-    test = True
-#     test = False
+#    test = True
+    test = False
 
     while divident > 1:
         for index, divisor in enumerate(denominations):
